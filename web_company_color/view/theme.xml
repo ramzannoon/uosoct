@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+<!--    <template id="assets_backend" name="my custom theme" inherit_id="web.assets_backend">-->
+<!--        <xpath expr="." position="inside">-->
+<!--            <link rel="stylesheet" href="/web_company_color/static/src/scss/theme_style.scss"/>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+    <template id="_assets_primary_variables" inherit_id="web._assets_primary_variables">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/web_company_color/static/src/scss/theme_style.scss"/>
+        </xpath>
+    </template>
+
+</odoo>
